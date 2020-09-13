@@ -1046,3 +1046,55 @@ a {
     margin-left: 20px;
     align-self: center;
 }
+
+.show-5--blog {
+    height: 400px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+    border-radius: 5px;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+.header {
+    background: #fff;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
