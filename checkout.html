@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Check Out</title>
     <link rel="stylesheet" href="mainstyle.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -93,178 +93,129 @@
         <div class="col-12">
             <div class="container">
                 <div>
-                    <h2>About Us</h2>
+                    <h2>Check Out</h2>
                     <div class="row breadcrumb__link">
                         <span><a href="index.html">Home <i class="material-icons">keyboard_arrow_right</i></a></span>
-                        <span class="text-blur">About Us</span>
+                        <span><a href="shop.html">Shop <i class="material-icons">keyboard_arrow_right</i></a></span>
+                        <span class="text-blur">Check Out</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about margin-top-100">
+    <section>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="about__image">
-                        <img src="https://colorlib.com/preview/theme/malefashion/img/about/about-us.jpg" alt="image shop">
+            <div class="form margin-top-100">
+                <form action="#">
+                    <div class="row">
+                        <div class="col-8">
+                            <p class="style-have-code">
+                                <i class="material-icons">turned_in_not</i> Have a coupon? <a href="#">Click here</a> to enter your code
+                            </p>
+                            <h3>BILLING DETAILS</h3>
+                            <div class="row">
+                                <div class="col-6 text-form">
+                                    <label for="first-name">First name<span class="color-red">*</span></label>
+                                    <input type="text" id="first-name">
+                                </div>
+                                <div class="col-6 text-form">
+                                    <label for="last-name">Last Name<span class="color-red">*</span></label>
+                                    <input type="text" id="last-name">
+                                </div>
+                            </div>
+                            <div class="text-form">
+                                <label for="country-name">Country<span class="color-red">*</span></label>
+                                <input type="text" id="country-name">
+                            </div>
+                            <div class="text-form">
+                                <label for="address-name">Address<span class="color-red">*</span></label>
+                                <input type="text" id="address-name" placeholder="Street Address"><br><br>
+                                <input type="text" placeholder="Apartment, suite, unite ect (optinal)">
+                            </div>
+                            <div class="text-form">
+                                <label for="city-name">Town/City<span class="color-red">*</span></label>
+                                <input type="text" id="city-name">
+                            </div>
+                            <div class="text-form">
+                                <label for="conuntry-state-name">Conuntry/State<span class="color-red">*</span></label>
+                                <input type="text" id="conuntry-state-name">
+                            </div>
+                            <div class="text-form">
+                                <label for="postcode">Postcode / ZIP<span class="color-red">*</span></label>
+                                <input type="text" id="postcode">
+                            </div>
+                            <div class="row">
+                                <div class="col-6 text-form">
+                                    <label for="phone">Phone<span class="color-red">*</span></label>
+                                    <input type="text" id="phone">
+                                </div>
+                                <div class=" col-6 email-form">
+                                    <label for="email">Email<span class="color-red">*</span></label>
+                                    <input type="email" id="email">
+                                </div>
+                            </div>
+                            <div class="checkbox-form">
+                                <input type="checkbox" name="create-accout" id="create-accout">
+                                <label for="create-accout">Create an account?</label>
+                            </div>
+                            <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
+                            <div class="text-form">
+                                <label for="accout-password">Account Password<span class="color-red">*</span></label>
+                                <input type="text" id="accout-password">
+                            </div>
+                            <div class="checkbox-form">
+                                <input type="checkbox" name="order-check" id="order-check">
+                                <label for="order-check">Note about your order, e.g, special noe for delivery</label>
+                            </div>
+                            <div class="text-form">
+                                <label for="order-notes">Order notes<span class="color-red">*</span></label>
+                                <input type="text" id="order-notes" placeholder="Node about your order, e.g special notes for delivery">
+                            </div>
+                        </div>
+
+                        <div class="col-4 ">
+                            <div class="checkout-order">
+                                <div class="checkout-order__title">
+                                    <h1>YOUR ORDER</h1>
+                                </div>
+                                <div class="checkout-order__total-product">
+                                    <p><span>Product</span><span>Total</span></p>
+                                    <p><span>01. Vanilla salted caramel</span><span>$ 300.0</span></p>
+                                    <p><span>02. German chocolate</span><span>$ 170.0</span></p>
+                                    <p><span>03. Sweet autumn</span><span>$ 170.0</span></p>
+                                    <p><span>04. Cluten free mini dozen</span><span>$ 110.0</span></p>
+                                </div>
+                                <div class="checkout-order__total-all">
+                                    <p><span>Subtotal</span><span>$750.99</span></p>
+                                    <p><span>Total</span><span>$750.99</span></p>
+                                </div>
+                                <div class="checkbox-form checkbox-form--create-accout">
+                                    <input type="checkbox" name="create-accout-2" id="create-accout-2">
+                                    <label for="create-accout-2">Create an account?</label>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="checkbox-form">
+                                    <input type="checkbox" name="check-payment" id="check-payment">
+                                    <label for="check-payment">Check Payment</label>
+                                </div>
+                                <div class="checkbox-form">
+                                    <input type="checkbox" name="paypal" id="paypal">
+                                    <label for="paypal">Paypal</label>
+                                </div>
+                                <div class="col-12 btn btn--place-order">
+                                    <button type="submit">PLACE ORDER</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row margin-top-50">
-                <div class="col-4">
-                    <div class="about__info">
-                        <h1>Who We Are ?</h1>
-                        <p>
-                            Contextual advertising programs sometimes have strict policies that need to be adhered too. Let’s take Google as an example.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="about__info">
-                        <h1>Who We Are ?</h1>
-                        <p>
-                            Contextual advertising programs sometimes have strict policies that need to be adhered too. Let’s take Google as an example.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="about__info">
-                        <h1>Who We Are ?</h1>
-                        <p>
-                            Contextual advertising programs sometimes have strict policies that need to be adhered too. Let’s take Google as an example.
-                        </p>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
-    <section class="testimonial margin-top-100">
-        <div class="row">
-            <div class="col-6">
-                <div class="testimonial__text">
-                    <div class="testimonial__text__quote"><i class="fa fa-quote-right"></i></div>
-                    <p class="testimonial__text__text">
-                        “Going out after work? Take your butane curling iron with you to the office, heat it up, style your hair before you leave the office and you won’t have to make a trip back home.”
-                    </p>
-                    <div class="testimonial__text__author">
-                        <span><img src="https://colorlib.com/preview/theme/malefashion/img/about/testimonial-author.jpg" alt="image auther"></span>
-                        <span><strong>Augusta Schultz</strong><br><i>Fashion Design</i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="testimonial__image">
-                    <img src="https://images.snapwi.re/1a43/5e1da939ab2b00a24cb59126.w800.jpg" alt="image trip">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="couter margin-top-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="couter__item">
-                        <div>102</div>
-                        <div>Our<br>Clients</div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="couter__item">
-                        <div>30</div>
-                        <div>Toatl<br>Categories</div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="couter__item">
-                        <div>102</div>
-                        <div>In<br>Country</div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="couter__item">
-                        <div>98%</div>
-                        <div>Happy<br>Customer</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="team margin-top-100">
-        <div class="container">
-            <div class="team__intro text-center">
-                <p><strong>OUR TEAM</strong></p>
-                <h2>Meet Our Team</h2>
-            </div>
-            <div class="row margin-top-50">
-                <div class="col-3">
-                    <div class="team__info">
-                        <img src="https://colorlib.com/preview/theme/malefashion/img/about/team-1.jpg" alt="image team">
-                        <h3>John Smith</h3>
-                        <p>Fastion Design</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="team__info">
-                        <img src="https://colorlib.com/preview/theme/malefashion/img/about/team-2.jpg" alt="image team">
-                        <h3>John Smith</h3>
-                        <p>C.E.O</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="team__info">
-                        <img src="https://colorlib.com/preview/theme/malefashion/img/about/team-3.jpg" alt="image team">
-                        <h3>Sean Robbins</h3>
-                        <p>Manager</p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="team__info">
-                        <img src="https://colorlib.com/preview/theme/malefashion/img/about/team-4.jpg" alt="image team">
-                        <h3>Lucy Myers</h3>
-                        <p>Delivery</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="margin-top-100">
-        <div class="container">
-            <div class="team__intro text-center">
-                <p><strong>OUR TEAM</strong></p>
-                <h2>Meet Our Team</h2>
-            </div>
-            <div class="row margin-top-50 text-center">
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-1.png" alt="logo company">
-                </div>
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-2.png" alt="logo company">
-                </div>
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-3.png" alt="logo company">
-                </div>
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-4.png" alt="logo company">
-                </div>
-            </div>
-            <div class="row margin-top-100 text-center">
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-5.png" alt="logo company">
-                </div>
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-6.png" alt="logo company">
-                </div>
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-7.png" alt="logo company">
-                </div>
-                <div class="col-3">
-                    <img src="https://colorlib.com/preview/theme/malefashion/img/clients/client-8.png" alt="logo company">
-                </div>
-            </div>
-        </div>
-    </section>>
+
+
     <footer class="footer margin-top-100">
         <div class="container">
             <div class="row col-center footer__top">

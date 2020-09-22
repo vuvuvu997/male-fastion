@@ -5,614 +5,717 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainstyle.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header padding-auto">
-        <div class="col-8 header__left"><span>Free shipping, 30-day return or refund guarantee.</span></div>
-        <div class="col-4 header__right">
-            <ul class="menu">
-                <li><a href="#">SIGN IN</a></li>
-                <li><a href="#">FAQS</a></li>
-                <li class="menu__item">
-                    <a href="#">USD <i class='fas fa-angle-down margin-col'></i></a>
-                    <ul class="menu menu__sub">
-                        <li class="margin-row"><a href="#">USD</a></li>
-                        <li class="margin-row"><a href="#">USD</a></li>
-                        <li class="margin-row"><a href="#">USD</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row col-center">
+                    <div class="col-6">
+                        <p>Free shipping, 30-day return or refund guarantee.</p>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-right">
+                            <div class="header__top__link">
+                                <a href="#">Sign in</a>
+                                <a href="#">FAQs</a>
+                            </div>
+                            <div class="header__top__hover">
+                                <span>USD<i class='fas fa-angle-down'></i></span>
+                                <ul class="vertical-menu">
+                                    <li class="vertical-menu__item">USD</li>
+                                    <li class="vertical-menu__item">EUR</li>
+                                    <li class="vertical-menu__item">USD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__bottom row col-center">
+                <div class="col-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="https://colorlib.com/preview/theme/malefashion/img/logo.png" alt="logo-shop">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <nav class="nav row-center">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="./index.html">Home</a><span class="border-bottom "></span></li>
+                            <li class="menu__item"><a href="./shop.html">Shop</a><span class="border-bottom border-bottom--active"></span></li>
+                            <li class="menu__item menu__item--page">
+                                <a href="./aboutus.html">Pages</a><span class="border-bottom "></span>
+                                <ul class="dropdown dropdown--page">
+                                    <li class="dropdown__item dropdown__item--page"><a href="./aboutus.html">About Us</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--page"><a href="./shop-details.html">Shop
+                                            Details</a></li>
+                                    <li class="dropdown__item dropdown__item--page"><a href="./shopping-cart.html">Shopping
+                                            Carts</a></li>
+                                    <li class="dropdown__item dropdown__item--page"><a href="./checkout.html">Check Out</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--page"><a href="./blog-details.html">Blog
+                                            Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="./blog.html">Blog</a>
+                                <span class="border-bottom "></span>
+                            </li>
+                            <li class="menu__item"><a href="./contacts.html">Contacts</a><span class="border-bottom "></span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <div class="nav-option text-right">
+                        <a onclick="openNavSearch()" href="#"><i class="material-icons">search</i></a>
+                        <a href="./shopping-cart.html"><i class='far fa-heart'></i></a>
+                        <a href="./checkout.html"><i class="material-icons">shopping_cart</i></a>
+                        <div class="price">
+                            $0.00
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </header>
-    <nav class="nav padding-auto">
-        <div class="col-3 nav__left">
-            <a href="index.html"><img src="https://colorlib.com/preview/theme/malefashion/img/logo.png" alt="logo"></a>
-        </div>
-        <div class="col-6 nav__mid">
-            <ul class="menu menu--modify">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li class="menu__item">
-                    <a href="#">Pages</a>
-                    <ul class="menu__sub menu__sub--modify">
-                        <li class="margin-row"><a href="aboutus.html">About Us</a></li>
-                        <li class="margin-row"><a href="#">Shop Details</a></li>
-                        <li class="margin-row"><a href="#">Shopping Cart</a></li>
-                        <li class="margin-row"><a href="#">Check Out</a></li>
-                        <li class="margin-row"><a href="#">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col-3 nav__right">
-            <a href="#"><i class='fas fa-search'></i></a>
-            <a href="#"><i class='far fa-heart'></i></a>
-            <a href="#"><i class='fas fa-shopping-cart'></i></a>
-            <span class="margin-col">$0.00</span>
-        </div>
-    </nav>
-
-    <div class="shop-nav padding-auto">
-        <h2>Shop</h2>
-        <p><a href="#"><strong>Home</strong><i class="fa fa-angle-right margin-col"></i></a> Shop</p>
-    </div>
-    <div class="shop-body padding-auto margin-top-100">
-        <div class="shop-body__left col-3">
-            <div class="form-search">
-                <input type="text" name="search" id="search" placeholder="Search...">
-                <span><i class="material-icons">search</i></span>
-            </div>
-            <div class="shop-body__left__menu margin-top-50">
-                <div class="mini-cart  margin-topdown-20">
-                    <div class="mini-cart__label">
-                        <label for="popup-CATEGORIES">
-                            <span>CATEGORIES</span><span><i class='fas fa-angle-down'></i></span>
-                        </label>
-                    </div>
-                    <input type="checkbox" id="popup-CATEGORIES" class="btn--hidden">
-                    <div class="mini-cart__content mini-cart__content--CATEGORIES">
-                        <a href="#">Bags (20)</a>
-                        <a href="#">Clothing (20)</a>
-                        <a href="#">Shoes (20)</a>
-                        <a href="#">Accessories (20)</a>
-                        <a href="#">Kids (20)</a>
-                        <a href="#">Kids (20)</a>
-                        <a href="#">Kids (20)</a>
-                    </div>
-                </div>
-                <div class="mini-cart  margin-topdown-20">
-                    <div class="mini-cart__label">
-                        <label for="popup-BRANDING">
-                            <span>BRANDING</span><span><i class='fas fa-angle-down'></i></span>
-                        </label>
-                    </div>
-                    <input type="checkbox" id="popup-BRANDING" class="btn--hidden">
-                    <div class="mini-cart__content mini-cart__content--BRANDING">
-                        <a href="#">Louis Vuitton</a>
-                        <a href="#">Chanel</a>
-                        <a href="#">Hermes</a>
-                        <a href="#">Gucci</a>
-                    </div>
-                </div>
-                <div class="mini-cart  margin-topdown-20">
-                    <div class="mini-cart__label">
-                        <label for="popup-PRICE">
-                            <span>FILTER PRICE</span><span><i class='fas fa-angle-down'></i></span>
-                        </label>
-                    </div>
-                    <input type="checkbox" id="popup-PRICE" class="btn--hidden">
-                    <div class="mini-cart__content">
-                        <a href="#">$0.00 - $50.00</a>
-                        <a href="#">$50.00 - $100.00</a>
-                        <a href="#">$100.00 - $150.00</a>
-                        <a href="#">$150.00 - $200.00</a>
-                        <a href="#">$200.00 - $250.00</a>
-                        <a href="#">250.00+</a>
-                    </div>
-                </div>
-                <div class="mini-cart  margin-topdown-20">
-                    <div class="mini-cart__label">
-                        <label for="popup-SIZE">
-                            <span>SIZE</span><span><i class='fas fa-angle-down'></i></span>
-                        </label>
-                    </div>
-                    <input type="checkbox" id="popup-SIZE" class="btn--hidden">
-                    <div class="mini-cart__content">
-                        <button class="btn btn--size"><strong>XS</strong></button>
-                        <button class="btn btn--size"><strong>S</strong></button>
-                        <button class="btn btn--size"><strong>M</strong></button>
-                        <button class="btn btn--size"><strong>XL</strong></button>
-                        <button class="btn btn--size"><strong>2XL</strong></button>
-                        <button class="btn btn--size"><strong>XXL</strong></button>
-                        <button class="btn btn--size"><strong>3XL</strong></button>
-                        <button class="btn btn--size"><strong>4XL</strong></button>
-                    </div>
-                </div>
-                <div class="mini-cart  margin-topdown-20">
-                    <div class="mini-cart__label">
-                        <label for="popup-COLORS">
-                            <span>COLORS</span><span><i class='fas fa-angle-down'></i></span>
-                        </label>
-                    </div>
-                    <input type="checkbox" id="popup-COLORS" class="btn--hidden">
-                    <div class="mini-cart__content">
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                        <button class="btn--color"></button>
-                    </div>
-                </div>
-                <div class="mini-cart margin-topdown-20">
-                    <div class="mini-cart__label">
-                        <label for="popup-TAGS">
-                            <span>TAGS</span><span><i class='fas fa-angle-down'></i></span>
-                        </label>
-                    </div>
-                    <input type="checkbox" id="popup-TAGS" class="btn--hidden">
-                    <div class="mini-cart__content">
-                        <span class="btn--tags"><a href="#">PRODUCT</a></span>
-                        <span class="btn--tags"><a href="#">BAGS</a></span>
-                        <span class="btn--tags"><a href="#">SHOES</a></span>
-                        <span class="btn--tags"><a href="#">FASHIO</a></span>
-                        <span class="btn--tags"><a href="#">CLOTHING</a></span>
-                        <span class="btn--tags"><a href="#">HATS</a></span>
-                        <span class="btn--tags"><a href="#">ACESSORIES</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="shop-body__right col-9">
-            <div class="shop-body__right__title">
-                <div class="shop-body__right__title__1">
-                    <div class="col-9">
-                        <p>Showing <span><strong>1–12</strong> </span> of <span><strong>126</strong> </span> results</p>
-                    </div>
-                    <div class="col-3 menu-js">
-                        <span>Sort By Price:</span>
-                        <div id="menu-js__items" class="menu-js__items">
-                            <span id="menu-js__items--ingfo" class="menu-js__items--ingfo"><strong>Low To Hight</strong> </span>
-                            <span id="menu-js__items__down" class="menu-js__items__down"><i class='fas fa-angle-down'></i></span>
-                            <span id="menu-js__items__up" class="menu-js__items__up"><i class='fas fa-angle-up'></i></span>
-                        </div>
-                        <div id="menu-js__item--sub" class="menu-js__item--sub">
-                            <span class="menu-js__item--sub__item">Low To Hight</span>
-                            <span class="menu-js__item--sub__item">$0 - $55</span>
-                            <span class="menu-js__item--sub__item">$55 - $100</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="shop-body__right__products">
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 items">
-                    <div class="items__info__1">
-                        <img src="https://loremflickr.com/263/263 " alt="product " />
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <span>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                            <i class="material-icons ">star_border</i>
-                        </span><br>
-                        <span class="items__info__1__cost">$67.24</span>
-                        <span class=" items__info__1__state ">New</span>
-                        <div class="items__info__2__menu">
-                            <ul>
-                                <li><a href=" # "><i class='far fa-heart'></i></a></li>
-                                <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
-                                <li><a href="# "><i class="material-icons ">search</i></a></li>
-                            </ul>
-                        </div>
-                        <div class="items__info__2__add-cart">
-                            <span>+ Add To Cart</span>
-                        </div>
-                        <div class="items__info__2__checkcolor">
-                            <input type="radio" name="color" id="color1" checked="checked">
-                            <input type="radio" name="color" id="color2 ">
-                            <input type="radio" name="color" id="color3 ">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="shop-body__right__footer">
-                <span class="btn--color btn-next btn-next--active"><a href="#">1</a></span>
-                <span class="btn--color btn-next "><a href=" # ">2</a></span>
-                <span class="btn--color btn-next"><a href="#">3</a></span>
-                <span class="btn-next--not">. . .</span>
-                <span class="btn--color btn-next "><a href="#">21</a></span>
-            </div>
-        </div>
-    </div>
-    </div>
-    <footer class="footer padding-auto">
-        <div class="footer__row-1">
-            <div class="col-4 footer__row-1__left">
+    <section class="breadcrumb">
+        <div class="col-12">
+            <div class="container">
                 <div>
-                    <a href="#"><img src="https://colorlib.com/preview/theme/malefashion/img/footer-logo.png" alt="logo"></a>
-                </div>
-                <p>
-                    The customer is at the heart of our<br> unique business model, which includes design.
-                </p>
-                <div>
-                    <a href="#"><img src="https://colorlib.com/preview/theme/malefashion/img/payment.png" alt="cart"></a>
-                </div>
-            </div>
-            <div class="col-4 footer__row-1__mid">
-                <div class="col-6 footer__row-1__mid__left">
-                    <h2>SHOPPING</h2>
-                    <p><a href="#">Clothing Store</a></p>
-                    <p><a href="#">Trending Shoes</a></p>
-                    <p><a href="#">Accessories</a></p>
-                    <p><a href="#">Sale</a></p>
-                </div>
-                <div class="col-6 footer__row-1__mid__left">
-                    <h2>SHOPPING</h2>
-                    <p><a href="#">Contact Us</a></p>
-                    <p><a href="#">Payment Methods</a></p>
-                    <p><a href="#">Delivary</a></p>
-                    <p><a href="#">Return & Exchanges</a></p>
-                </div>
-            </div>
-            <div class="col-4 footer__row-1__right">
-                <h2>NEWLETTER</h2>
-                <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-                <div class="form-email">
-                    <form action="#" method="post">
-                        <input type="email" name="email-name" id="email-name" placeholder="Your email">
-                        <span><a href="#"><i class="material-icons">email</i></a></span>
-                    </form>
+                    <h2>Shop</h2>
+                    <div class="row breadcrumb__link">
+                        <span><a href="index.html">Home <i class="material-icons">keyboard_arrow_right</i></a></span>
+                        <span class="text-blur">Shop</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__row-2">
-            <p class="text-center">Copyright © 20202020 All rights reserved | This template is made with<i class='far fa-heart margin-col'></i> by <a href="#">Colorlib</a></p>
+    </section>
+
+    <section class="shop margin-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="shop__sidebar">
+                        <div class="form form--shop__sidebar">
+                            <div class="text-form">
+                                <input type="text" id="first-name" placeholder="Search...">
+                                <span class="shop__sidebar__search"><i class="material-icons">search</i></span>
+                            </div>
+                        </div>
+                        <div class="shop-body__left__menu margin-top-50">
+                            <div class="mini-cart  margin-topdown-20">
+                                <div class="mini-cart__label">
+                                    <label for="popup-CATEGORIES">
+                                <span>CATEGORIES</span><span><i class='fas fa-angle-down'></i></span>
+                            </label>
+                                </div>
+                                <input type="checkbox" id="popup-CATEGORIES" class="btn--hidden">
+                                <div class="mini-cart__content mini-cart__content--CATEGORIES">
+                                    <a href="#">Bags (20)</a>
+                                    <a href="#">Clothing (20)</a>
+                                    <a href="#">Shoes (20)</a>
+                                    <a href="#">Accessories (20)</a>
+                                    <a href="#">Kids (20)</a>
+                                    <a href="#">Kids (20)</a>
+                                    <a href="#">Kids (20)</a>
+                                </div>
+                            </div>
+                            <div class="mini-cart  margin-topdown-20">
+                                <div class="mini-cart__label">
+                                    <label for="popup-BRANDING">
+                                <span>BRANDING</span><span><i class='fas fa-angle-down'></i></span>
+                            </label>
+                                </div>
+                                <input type="checkbox" id="popup-BRANDING" class="btn--hidden">
+                                <div class="mini-cart__content mini-cart__content--BRANDING">
+                                    <a href="#">Louis Vuitton</a>
+                                    <a href="#">Chanel</a>
+                                    <a href="#">Hermes</a>
+                                    <a href="#">Gucci</a>
+                                </div>
+                            </div>
+                            <div class="mini-cart  margin-topdown-20">
+                                <div class="mini-cart__label">
+                                    <label for="popup-PRICE">
+                                <span>FILTER PRICE</span><span><i class='fas fa-angle-down'></i></span>
+                            </label>
+                                </div>
+                                <input type="checkbox" id="popup-PRICE" class="btn--hidden">
+                                <div class="mini-cart__content">
+                                    <a href="#">$0.00 - $50.00</a>
+                                    <a href="#">$50.00 - $100.00</a>
+                                    <a href="#">$100.00 - $150.00</a>
+                                    <a href="#">$150.00 - $200.00</a>
+                                    <a href="#">$200.00 - $250.00</a>
+                                    <a href="#">250.00+</a>
+                                </div>
+                            </div>
+                            <div class="mini-cart  margin-topdown-20">
+                                <div class="mini-cart__label">
+                                    <label for="popup-SIZE">
+                                <span>SIZE</span><span><i class='fas fa-angle-down'></i></span>
+                            </label>
+                                </div>
+                                <input type="checkbox" id="popup-SIZE" class="btn--hidden">
+                                <div class="mini-cart__content">
+                                    <button class="btn btn--size"><strong>XS</strong></button>
+                                    <button class="btn btn--size"><strong>S</strong></button>
+                                    <button class="btn btn--size"><strong>M</strong></button>
+                                    <button class="btn btn--size"><strong>XL</strong></button>
+                                    <button class="btn btn--size"><strong>2XL</strong></button>
+                                    <button class="btn btn--size"><strong>XXL</strong></button>
+                                    <button class="btn btn--size"><strong>3XL</strong></button>
+                                    <button class="btn btn--size"><strong>4XL</strong></button>
+                                </div>
+                            </div>
+                            <div class="mini-cart  margin-topdown-20">
+                                <div class="mini-cart__label">
+                                    <label for="popup-COLORS">
+                                <span>COLORS</span><span><i class='fas fa-angle-down'></i></span>
+                            </label>
+                                </div>
+                                <input type="checkbox" id="popup-COLORS" class="btn--hidden">
+                                <div class="mini-cart__content">
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                    <button class="btn--color"></button>
+                                </div>
+                            </div>
+                            <div class="mini-cart margin-topdown-20">
+                                <div class="mini-cart__label">
+                                    <label for="popup-TAGS">
+                                <span>TAGS</span><span><i class='fas fa-angle-down'></i></span>
+                            </label>
+                                </div>
+                                <input type="checkbox" id="popup-TAGS" class="btn--hidden">
+                                <div class="mini-cart__content">
+                                    <span class="btn btn--tags"><a href="#">PRODUCT</a></span>
+                                    <span class="btn btn--tags"><a href="#">BAGS</a></span>
+                                    <span class="btn btn--tags"><a href="#">SHOES</a></span>
+                                    <span class="btn btn--tags"><a href="#">FASHIO</a></span>
+                                    <span class="btn btn--tags"><a href="#">CLOTHING</a></span>
+                                    <span class="btn btn--tags"><a href="#">HATS</a></span>
+                                    <span class="btn btn--tags"><a href="#">ACESSORIES</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shop-body__right__title">
+                                <div class="shop-body__right__title__1">
+                                    <div class="col-9">
+                                        <p>Showing <span><strong>1–12</strong> </span> of <span><strong>126</strong> </span> results</p>
+                                    </div>
+                                    <div class="col-3 menu-js">
+                                        <span>Sort By Price:</span>
+                                        <div id="menu-js__items" class="menu-js__items">
+                                            <span id="menu-js__items--ingfo" class="menu-js__items--ingfo"><strong>Low To Hight</strong> </span>
+                                            <span id="menu-js__items__down" class="menu-js__items__down"><i class='fas fa-angle-down'></i></span>
+                                            <span id="menu-js__items__up" class="menu-js__items__up"><i class='fas fa-angle-up'></i></span>
+                                        </div>
+                                        <div id="menu-js__item--sub" class="menu-js__item--sub">
+                                            <span class="menu-js__item--sub__item">Low To Hight</span>
+                                            <span class="menu-js__item--sub__item">$0 - $55</span>
+                                            <span class="menu-js__item--sub__item">$55 - $100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  margin-top-50">
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product__item">
+                                <div class="product__item__image">
+                                    <img src="https://loremflickr.com/260/270" alt=" image product ">
+                                </div>
+                                <div class="product__item__info ">
+                                    <p><strong>Piqué Biker Jacket</strong></p>
+                                    <p class="vote "><span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star vote__checked "></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star "></span>
+                                    </p>
+                                    <p><span><strong>$67.24</strong></span></p>
+                                </div>
+                                <div class="product__item__more-menu ">
+                                    <ul>
+                                        <li><a href="# "><i class='far fa-heart'></i></a></li>
+                                        <li><a href="# "><i class="material-icons ">compare_arrows</i></a></li>
+                                        <li><a href="# "><i class="material-icons ">search</i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__more-add-cart ">
+                                    <p> + Add To Cart</p>
+                                </div>
+                                <div class="product__item__choice-color">
+                                    <span class="product__item__choice-color__red"></span>
+                                    <span class="product__item__choice-color__blue"></span>
+                                    <span class="product__item__choice-color__green"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margin-top-50">
+                        <div class="col-12">
+                            <div class="product__pagination text-center">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <span><strong>. . .</strong></a></span>
+                                <a href="#">21</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer margin-top-100">
+        <div class="container">
+            <div class="row col-center footer__top">
+                <div class="col-4">
+                    <div class="footer__about text-left">
+                        <div class="footer__logo ">
+                            <a href="index.html"><img src="https://colorlib.com/preview/theme/malefashion/img/footer-logo.png" alt="footer logo"></a>
+                        </div>
+                        <p>The customer is at the heart of our <br>unique business model, which includes<br> design.</p>
+                        <div class="link-cart">
+                            <a href="#"><img src="https://colorlib.com/preview/theme/malefashion/img/payment.png" alt="link cart"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row margin-left-50">
+                        <div class="col-6">
+                            <div class="footer-widget">
+                                <h6>SHOPPING</h6>
+                                <ul class="dropdown dropdown--footer">
+                                    <li class="dropdown__item"><a href="#">Clothing Store</a></li>
+                                    <li class="dropdown__item"><a href="#">Trending Shoes</a></li>
+                                    <li class="dropdown__item"><a href="#">Accessories</a></li>
+                                    <li class="dropdown__item"><a href="#">Sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-widget">
+                                <h6>SHOPPING</h6>
+                                <ul class="dropdown dropdown--footer">
+                                    <li class="dropdown__item"><a href="#">Clothing Store</a></li>
+                                    <li class="dropdown__item"><a href="#">Trending Shoes</a></li>
+                                    <li class="dropdown__item"><a href="#">Accessories</a></li>
+                                    <li class="dropdown__item"><a href="#">Sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="footer-widget footer__about footer-align-rignt">
+                        <h6>NEWLETTER</h6>
+                        <p>Be the first to know about new arrivals,<br> look books, sales & promos!</p>
+                        <div class="form form-mail">
+                            <form action="#">
+                                <input type="email" placeholder="Your email">
+                                <button type="submit"><span><i class="material-icons">email</i></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer__copyright text-center">
+                        <p>Copyright © 20202020 All rights reserved | This template is made with <i class='far fa-heart'></i> by <a href="#">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-
     <script type="text/javascript">
         let menu = document.getElementById('menu-js__items');
         let menu_sub = document.getElementById('menu-js__item--sub');
@@ -633,20 +736,26 @@
                 state = false;
             }
         }
-
+        let flag = true;
         let menu_sub_infor = document.getElementById('menu-js__items--ingfo');
         let list_item = document.getElementsByClassName('menu-js__item--sub__item');
+
         Array.from(list_item).map((el) => {
             el.onclick = function() {
                 menu_sub_infor.innerHTML = el.innerText;
                 menu_sub_infor.style.fontWeight = "bold";
+                // el.style.fontWeight = "bold";
                 menu_sub.style.display = 'none';
                 icon_down.style.display = 'inline-block';
                 icon_up.style.display = 'none';
                 state = false;
             }
+            el.unclickable = function() {
+                el.style.fontWeight = 'none';
+            }
         });
     </script>
+
 </body>
 
 </html>
